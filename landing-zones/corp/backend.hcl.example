@@ -1,0 +1,6 @@
+# Copy to backend.hcl. Pass the state key per environment:
+#   terraform init -backend-config=backend.hcl -backend-config="key=corp-dev.tfstate"
+resource_group_name  = "rg-tfstate"
+storage_account_name = "sttfstatexxxxx"
+container_name       = "tfstate"
+use_azuread_auth     = true
